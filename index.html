@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Rainy Window 🌧️❤️ | a love note written on the glass</title>
+<meta name="description" content="A rainy night window. The glass fogs up, an invisible finger draws a heart and writes a love note. Made by @hack.n.code">
+<meta property="og:title" content="Rainy Window 🌧️❤️">
+<meta property="og:description" content="Someone wrote you a love note on a rainy window. Tap to see it.">
+<meta name="theme-color" content="#0b0d1c">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<canvas id="gl"></canvas>
+<div id="cap"></div>
+<button id="snd" aria-label="sound">🔊</button>
+
+<section id="start">
+  <div class="st-inner">
+    <div class="st-emoji">🌧️</div>
+    <h1>Rainy<br>Window</h1>
+    <p class="st-sub">a love note, written on the glass</p>
+    <button id="begin">Tap the glass ❤️</button>
+    <p class="st-hint">turn your sound on 🔊</p>
+  </div>
+</section>
+
+<section id="end">
+  <div class="end-btns">
+    <button id="replay" class="btn ghost">↺ Replay</button>
+    <button id="share" class="btn main">Send it 💌</button>
+  </div>
+  <button id="mk" class="mk">✏️ Make one for your person</button>
+  <div class="credit">Made by <b>@hack.n.code</b></div>
+</section>
+
+<div id="make" class="modal"><div class="card">
+  <h2>Make it yours 💌</h2>
+  <p>Add a name and the window writes it in the fog at the end.</p>
+  <input id="petname" maxlength="16" placeholder="their name (optional)" autocomplete="off">
+  <button id="mkcopy" class="btn main">Copy link 🔗</button>
+  <div id="mklink"></div>
+  <button id="mkclose" class="btn ghost">Close</button>
+</div></div>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body></html>
